@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Guia do Investidor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display+SC"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script>
+      document.documentElement.className = " js";
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!--Criando o Modal-->
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" for="email" id="email" />
+
+          <label for="senha">Senha</label>
+          <input type="password" for="senha" id="senha" />
+
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+    <!---->
+
+    <div class="grid-container">
+      <nav class="menu" data-menu="suave">
+        <!--Criando o Menu Mobile-->
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul data-menu="list" id="menu">
+          <!---->
+          <li><a href="#investimentos">Tipos de Investimentos</a></li>
+          <!--Criando o DropDown Menu-->
+          <li data-dropdown>
+            <a href="sobre.html">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">A Empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Sócios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
+          <!---->
+          <li><a href="#faq">Faq</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <a data-modal="abrir" href="login.html" target="_blank">Login →</a>
+          </li>
+        </ul>
+      </nav>
+      <section
+        class="grid-section investimentos"
+        data-anime="scroll"
+        id="investimentos"
+      >
+        <h1 class="titulo">Tipos de Investimentos</h1>
+        <ul class="investimentos-lista" data-tab="menu">
+          <li>
+            <img src="img/renda-fixa.jpg" />
+          </li>
+          <li>
+            <img src="img/tesouro-direto.jpg" />
+          </li>
+          <li>
+            <img src="img/fiis.jpg" />
+          </li>
+          <li>
+            <img src="img/acoes.jpg" />
+          </li>
+          <li>
+            <img src="img/exterior.jpg" />
+          </li>
+          <li>
+            <img src="img/cripto.jpg" />
+          </li>
+        </ul>
+        <div class="investimento-descricao" data-tab="content">
+          <section data-anime="show-right">
+            <h2>Renda Fixa</h2>
+            <p>
+              A Renda Fixa abrange diversos tipos de investimentos em que a
+              forma de remuneração ou rendimento é conhecida no momento da
+              aplicação ou tem suas condições previamente determinadas.
+            </p>
+            <p>
+              A Renda Fixa de modo geral engloba outras opções de investimento,
+              como CDBs (Certificados de Depósito Bancário), LCIs (Letras de
+              Crédito Imobiliário), LCAs (Letras de Crédito do Agronegócio),
+              debêntures, entre outros.
+            </p>
+            <p>
+              Nesses casos, o investidor pode emprestar dinheiro a instituições
+              financeiras ou empresas e receber juros sobre esse valor.
+            </p>
+            <p>
+              A principal diferença entre o Tesouro Direto e outros
+              investimentos de Renda Fixa é a natureza do emissor: no Tesouro
+              Direto, o devedor é o governo federal, enquanto em outras
+              modalidades de Renda Fixa são empresas privadas ou instituições
+              financeiras.
+            </p>
+          </section>
+
+          <section data-anime="show-right">
+            <h2>Tesouro Direto</h2>
+            <p>
+              O Tesouro Direto é um programa de investimentos do governo federal
+              brasileiro, com o objetivo de permitir que pessoas físicas possam
+              adquirir títulos públicos de forma direta, ou seja, sem a
+              necessidade de intermediação de bancos ou corretoras.
+            </p>
+            <p>
+              Os títulos públicos são dívidas emitidas pelo governo para
+              financiar suas atividades, como infraestrutura, saúde, educação,
+              entre outras.
+            </p>
+            <p>
+              O programa oferece diferentes tipos de títulos, cada um com
+              características específicas em relação a prazo, rentabilidade e
+              riscos.
+            </p>
+            <p>
+              Entre os principais títulos disponíveis estão: Tesouro Selic,
+              Tesouro Prefixado e Tesouro IPCA+
+            </p>
+          </section>
+
+          <section data-anime="show-right">
+            <h2>Fundos Imobiliários</h2>
+            <p>
+              Fundos Imobiliários, também conhecidos como FIIs, são
+              investimentos coletivos que reúnem recursos de diversos
+              investidores para aplicar em empreendimentos do setor imobiliário.
+            </p>
+            <p>
+              O objetivo principal desses fundos é gerar renda por meio da
+              locação, arrendamento ou venda de imóveis, bem como de títulos
+              imobiliários, como Certificados de Recebíveis Imobiliários (CRIs)
+              e Letras de Crédito Imobiliário (LCIs).
+            </p>
+            <p>
+              Ao investir em um FII, o investidor adquire cotas que representam
+              uma fração do patrimônio do fundo, tornando-se, assim, um cotista.
+              Consequentemente, ele participa dos rendimentos gerados pelos
+              imóveis e títulos imobiliários do fundo proporcionalmente à
+              quantidade de cotas que possui.
+            </p>
+          </section>
+
+          <section data-anime="show-down">
+            <h2>Ações</h2>
+            <p>
+              As ações representam parcelas do capital social de uma empresa.
+              Quando uma empresa decide abrir capital e tornar-se uma sociedade
+              anônima, ela emite ações, que são colocadas à venda no mercado
+              financeiro.
+            </p>
+            <p>
+              Ao comprar ações de uma empresa, o investidor se torna um
+              acionista e adquire direitos proporcionais aos seus investimentos,
+              como o direito de participar nas decisões da empresa em
+              assembleias e receber parte dos lucros distribuídos sob a forma de
+              dividendos.
+            </p>
+            <p>
+              Ao comprar ações de uma empresa, o investidor se torna um dos
+              donos e pode ganhar dinheiro seja por meio da variação das ações
+              ou pelos proventos distribuídos
+            </p>
+          </section>
+
+          <section data-anime="show-down">
+            <h2>Investimentos Internacionais</h2>
+            <p>
+              O mercado financeiro internacional oferece aos investidores
+              oportunidades de diversificação, acesso a empresas e setores
+              globais e a possibilidade de investir em economias com diferentes
+              ciclos econômicos e graus de desenvolvimento.
+            </p>
+            <p>
+              Nele, são negociados ativos financeiros de diversas naturezas,
+              como ações, títulos de dívida, moedas estrangeiras, commodities e
+              derivativos.
+            </p>
+            <p>
+              As negociações são influenciadas por uma variedade de fatores,
+              como notícias econômicas, políticas, eventos geopolíticos e
+              condições globais de mercado.
+            </p>
+            <p>
+              Existem diversas opções de investimentos disponíveis no mercado
+              financeiro internacional. Alguns dos principais tipos de
+              investimentos no exterior incluem: Stocks, ETFs e BDRs.
+            </p>
+          </section>
+
+          <section data-anime="show-down">
+            <h2>Criptomoedas</h2>
+            <p>
+              Em contrapartida às moedas tradicionais, como dólares ou euros, as
+              criptomoedas são puramente digitais, operando em uma rede global
+              descentralizada.
+            </p>
+            <p>
+              Elas não são apenas simples moedas digitais, mas sim uma revolução
+              completa na forma como encaramos e conduzimos transações
+              financeiras.
+            </p>
+            <p>
+              Operando em uma estrutura descentralizada, as criptomoedas não
+              dependem de uma autoridade central ou intermediários financeiros,
+              como bancos, para facilitar as transações. Isso significa que os
+              usuários podem trocar valores diretamente uns com os outros,
+              eliminando a necessidade de terceiros para confirmar e autorizar
+              essas transações.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section class="grid-section faq" data-anime="scroll" id="faq">
+        <h1 class="titulo">FAQ</h1>
+        <dl class="faq-lista" data-anime="accordion">
+          <dt>O que é Mercado Financeiro?</dt>
+          <dd>
+            O mercado financeiro é o ambiente onde são negociados diversos tipos
+            de ativos financeiros, que são como "produtos" que as pessoas podem
+            comprar ou vender com o objetivo de obter lucro ou rendimento ao
+            longo do tempo.
+          </dd>
+          <dt>Quais são os Tipos de Investimentos?</dt>
+          <dd>
+            Os tipos de investimento referem-se às diferentes formas pelas quais
+            as pessoas podem alocar seu dinheiro para obter ganhos financeiros
+            ao longo do tempo. Existem diversas opções disponíveis, cada uma com
+            características e riscos específicos, adequados a diferentes perfis
+            de investidores e objetivos financeiros.
+          </dd>
+          <dt>Qual a diferença entre Renda Fixa e Renda Variável?</dt>
+          <dd>
+            Na renda fixa, o investidor empresta seu dinheiro a uma instituição,
+            seja ela o governo ou uma empresa, por um período determinado. Em
+            troca, ele recebe uma remuneração, como juros, ao longo do tempo.
+            Por outro lado, a categoria de ativos conhecida como "Renda
+            Variável" é composta principalmente por ações negociadas no mercado
+            de capitais.
+          </dd>
+          <dt>O que é Perfil do Investidor?</dt>
+          <dd>
+            É importante destacar que, ao investir, é necessário considerar seu
+            perfil de risco, objetivos financeiros e o prazo para o retorno do
+            investimento.
+          </dd>
+        </dl>
+      </section>
+
+      <!--Criando Anima Números-->
+      <section class="grid-section numeros" data-anime="scroll">
+        <h1 class="titulo">Números</h1>
+        <div class="numeros-grid"></div>
+      </section>
+      <!---->
+
+      <section class="grid-section contato" data-anime="scroll" id="contato">
+        <h1 class="titulo">Contato</h1>
+        <!--Criando o Tooltip-->
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço próximo ao Shopping"
+        >
+          <img src="img/mapa.png" />
+        </div>
+
+        <ul class="dados">
+          <li>contato@gmail.com</li>
+          <li>+55 (35) 9999-9999</li>
+          <li>Rua Tio Patinhas, nº 24</li>
+          <li>Belo Horizonte - MG</li>
+          <li>Doe <span class="btc-preco"></span> bitcoin para nos ajudar</li>
+          <!--Criando Date Object-->
+          <li data-semana="1,2,3,4,5" data-horario="8,18">
+            Seg. a Sex., das 8h às 18h
+          </li>
+          <!---->
+        </ul>
+      </section>
+
+      <footer class="copy">
+        <p>Todos os direitos reservados.&reg;</p>
+      </footer>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
