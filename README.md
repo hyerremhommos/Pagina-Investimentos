@@ -16,6 +16,6 @@ Projeto web desenvolvido com HTML, CSS e JavaScript puro, que apresenta os princ
   - Dados de investimentos simulados
 
 ## ⚙️ Como rodar
-1. Clone o repositório:
+Clone o repositório:
    ```bash
    git clone https://github.com/hyerremhommos/Pagina-Investimentos.git
